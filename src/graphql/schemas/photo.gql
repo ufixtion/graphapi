@@ -1,0 +1,5 @@
+type Photo {
+  id: ID!
+  url: String!
+  safe: Boolean!
+}

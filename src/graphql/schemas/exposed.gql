@@ -1,0 +1,4 @@
+type Exposed {
+  avatar: String!
+  displayName: String!
+}

@@ -1,0 +1,7 @@
+enum FeedType {
+  DEFAULT
+  OWNED
+  LIKED
+  DISLIKED
+  COMMENTED
+}

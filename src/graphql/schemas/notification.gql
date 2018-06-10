@@ -1,0 +1,8 @@
+type Notification {
+  id: ID!
+  text: String
+  url: String
+  read: Boolean
+  type: NotificationType
+  createdAt: Date
+}

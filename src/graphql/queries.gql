@@ -1,0 +1,4 @@
+type Query {
+  me: User!
+  feed(listInput: ListInput, type: FeedType): StoryList!
+}

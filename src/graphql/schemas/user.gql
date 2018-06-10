@@ -1,0 +1,14 @@
+type User {
+  id: ID!
+  email: String!
+  displayName: String!
+  avatar: String!
+  exposed: Boolean!
+  friends(listInput: ListInput): UserList! # Resolved
+  createdAt: Date!
+}
+
+type UserList implements List {
+  cursor: String!
+  users: [User]!
+}

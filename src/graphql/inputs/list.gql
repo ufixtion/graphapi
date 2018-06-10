@@ -1,0 +1,4 @@
+input ListInput {
+  cursor: String
+  limit: Int
+}

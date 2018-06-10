@@ -1,0 +1,18 @@
+type Story {
+  id: ID!
+  parent: Story # Resolved
+  text: String!
+  photos: [Photo]!
+  owner: User # Resolved
+  reaction: ReactionType # Resolved
+  likes: Int!
+  dislikes: Int!
+  comments(listInput: ListInput): StoryList! # Resolved
+  exposed: Exposed
+  createdAt: Date!
+}
+
+type StoryList implements List {
+  cursor: String!
+  stories: [Story]!
+}
