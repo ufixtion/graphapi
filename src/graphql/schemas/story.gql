@@ -1,13 +1,13 @@
 type Story {
   id: ID!
-  parent: Story # Resolved
+  parent: Story # Resolve
   text: String!
   photos: [Photo]!
-  owner: User # Resolved
-  reaction: ReactionType # Resolved
+  owner: User # Resolve
+  reaction: ReactionType # Resolve
   likes: Int!
   dislikes: Int!
-  comments(listInput: ListInput): StoryList! # Resolved
+  comments(listInput: ListInput): StoryList! # Resolve
   exposed: Exposed
   createdAt: Date!
 }

@@ -4,7 +4,8 @@ type User {
   displayName: String!
   avatar: String!
   exposed: Boolean!
-  friends(listInput: ListInput): UserList! # Resolved
+  friends(listInput: ListInput): UserList! # Resolve
+  notifications(listInput: ListInput): NotificationList! #Resolve
   createdAt: Date!
 }
 

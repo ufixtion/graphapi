@@ -1,8 +1,13 @@
 type Notification {
   id: ID!
-  text: String
-  url: String
-  read: Boolean
-  type: NotificationType
-  createdAt: Date
+  text: String!
+  url: String!
+  read: Boolean!
+  type: NotificationType!
+  createdAt: Date!
+}
+
+type NotificationList implements List {
+  cursor: String!
+  notifications: [Notification]!
 }
