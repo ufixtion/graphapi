@@ -1,0 +1,5 @@
+type Query {
+  me: User!
+  feed(query: ListInput, type: FeedType): StoryList!
+  story(id: String!): Story
+}

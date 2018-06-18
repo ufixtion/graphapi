@@ -3,9 +3,8 @@ type User {
   email: String!
   displayName: String!
   avatar: String!
-  exposed: Boolean!
-  friends(listInput: ListInput): UserList! # Resolve
-  notifications(listInput: ListInput): NotificationList! #Resolve
+  friends(query: ListInput): UserList! # Resolve
+  notifications(query: ListInput): NotificationList! #Resolve
   createdAt: Date!
 }
 

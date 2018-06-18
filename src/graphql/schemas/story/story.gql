@@ -1,3 +1,4 @@
+
 type Story {
   id: ID!
   parent: Story # Resolve
@@ -7,7 +8,7 @@ type Story {
   reaction: ReactionType # Resolve
   likes: Int!
   dislikes: Int!
-  comments(listInput: ListInput): StoryList! # Resolve
+  comments(query: ListInput): StoryList! # Resolve
   exposed: Exposed
   createdAt: Date!
 }

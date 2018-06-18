@@ -1,0 +1,16 @@
+#import "./scalars/scalars.gql"
+#import "./schemas/story/story.gql"
+#import "./schemas/exposed.gql"
+#import "./schemas/notification.gql"
+#import "./schemas/photo.gql"
+#import "./schemas/user/user.gql"
+#import "./interfaces/list/list.gql"
+#import "./inputs/list.gql"
+#import "./enums/feed-type.gql"
+#import "./enums/notification-type.gql"
+#import "./enums/reaction-type.gql"
+#import "./schemas/query/query.gql"
+
+schema {
+  query: Query
+}
