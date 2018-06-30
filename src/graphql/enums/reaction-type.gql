@@ -1,4 +1,4 @@
 enum ReactionType {
-  LIKE
-  DISLIKE
+  LIKED
+  DISLIKED
 }
