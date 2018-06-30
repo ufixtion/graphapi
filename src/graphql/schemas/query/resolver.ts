@@ -5,9 +5,8 @@ import { database } from 'database'
 /**
 *
 */
-const me = (obj, args, context) => {
-  const id = context.userId
-
+const me = (obj, {}, context) => {
+  const {userId: id} = context
   return database.users.getById({id})
 }
 
