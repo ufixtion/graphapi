@@ -1,27 +1,20 @@
 import { database } from 'database';
 
 
-/**
-*
-*/
-const parent = (obj, args, context) => {
-
-}
-
 
 /**
 *
 */
-const owner = (obj, args, context) => {
+const reaction = (story, args, context) => {
+  // TODO: Needs Dataloader
 
-}
+  const {userId} = context
+  const {id} = story
 
-
-/**
-*
-*/
-const reaction = (obj, args, context) => {
-
+  return database.stories.getUserReaction({
+    userId,
+    id
+  })
 }
 
 
@@ -42,8 +35,6 @@ const comments = (parent, {query}, context) => {
 
 export default {
   Story: {
-    parent,
-    owner,
     reaction,
     comments
   }

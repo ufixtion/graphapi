@@ -1,10 +1,9 @@
 
 type Story {
   id: ID!
-  parent: Story # Resolve
   text: String!
   photos: [Photo]!
-  owner: User # Resolve
+  isOwner: Boolean!
   reaction: ReactionType # Resolve
   likes: Int!
   dislikes: Int!
