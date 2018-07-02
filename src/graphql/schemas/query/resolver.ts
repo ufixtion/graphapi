@@ -37,10 +37,26 @@ const story = (obj, {id}, context) => {
 }
 
 
+/**
+*
+*/
+const comments = (obj, {parentId, query}, context) => {
+  // TODO: Needs Dataloader
+
+  const { userId } = context;
+  return database.comments.getByParentIdForUser({
+    parentId,
+    userId,
+    query
+  })
+}
+
+
 export default {
   Query: {
     me,
     feed,
-    story
+    story,
+    comments
   }
 }
