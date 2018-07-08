@@ -3,4 +3,5 @@ type Query {
   feed(query: ListInput, type: FeedType): StoryList!
   story(id: String!): Story
   comments(parentId: String!, query: ListInput): StoryList!
+  notifications(query: ListInput): NotificationList!
 }
